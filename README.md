@@ -1,5 +1,27 @@
 # carbon-credit
 
+## Deployed Smart Contracts
+
+1. **Carbon Credit Token Contract:** 
+   - Polygon Mumbai Testnet
+     - Contract address: `0xbbB6623C5938cA5331f53B32BAe8dDe13d974dE0`
+     - Mumbai Polyscan: https://mumbai.polygonscan.com/address/0xf2c1f0eF64F63bcA27Ec2b6F6e6686B0Bd0DF13F
+
+   - Ethereum Sepolia Testnet
+     - Contract address: 0x04C6C2726c57292aFc8bfb980068EFC52D620D4B
+     - Sepolia etherscan: https://sepolia.etherscan.io/address/0x04C6C2726c57292aFc8bfb980068EFC52D620D4B
+
+
+2. **Token Marketplace Contract**
+   - Polygon Mumbai Testnet
+     - Contract address: `0x1C49F3c844781EBB18b53a1390C296559aB925db`
+     - Mombai Polyscan: https://mumbai.polygonscan.com/address/0x1C49F3c844781EBB18b53a1390C296559aB925db
+
+   - Ethereum Sepolia Testnet
+     - Contract address: `0x8eCEE3795D22f95F608a7000bAda71ff1b8cAdA0`
+     - Sepolia etherscan: https://sepolia.etherscan.io/address/0x8eCEE3795D22f95F608a7000bAda71ff1b8cAdA0
+
+
 The idea of tokenized carbon credits involves leveraging blockchain technology to create a decentralized platform for trading carbon credits. Carbon credits are tradable permits or certificates that represent the right to emit a specific amount of greenhouse gases. These credits are typically earned by organizations or individuals who reduce their carbon footprint or engage in activities that absorb or prevent the release of greenhouse gases.
 
 Here's an elaboration on how a tokenized carbon credits platform could work:
