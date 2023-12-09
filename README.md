@@ -7,6 +7,10 @@
      - Contract address: `0xbbB6623C5938cA5331f53B32BAe8dDe13d974dE0`
      - Mumbai Polyscan: https://mumbai.polygonscan.com/address/0xf2c1f0eF64F63bcA27Ec2b6F6e6686B0Bd0DF13F
 
+   - Polygon zkEVM Testnet
+     - Contract address: `0x04C6C2726c57292aFc8bfb980068EFC52D620D4B`
+     - zkEVM Polyscan: https://testnet-zkevm.polygonscan.com/address/0x04c6c2726c57292afc8bfb980068efc52d620d4b
+
    - Ethereum Sepolia Testnet
      - Contract address: 0x04C6C2726c57292aFc8bfb980068EFC52D620D4B
      - Sepolia etherscan: https://sepolia.etherscan.io/address/0x04C6C2726c57292aFc8bfb980068EFC52D620D4B
@@ -16,6 +20,11 @@
    - Polygon Mumbai Testnet
      - Contract address: `0x1C49F3c844781EBB18b53a1390C296559aB925db`
      - Mombai Polyscan: https://mumbai.polygonscan.com/address/0x1C49F3c844781EBB18b53a1390C296559aB925db
+
+   - Polygon zkEVM Testnet
+     - Contract address: `0x8eCEE3795D22f95F608a7000bAda71ff1b8cAdA0`
+     - zkEVM Polyscan: https://testnet-zkevm.polygonscan.com/address/0x8eCEE3795D22f95F608a7000bAda71ff1b8cAdA0
+   
 
    - Ethereum Sepolia Testnet
      - Contract address: `0x8eCEE3795D22f95F608a7000bAda71ff1b8cAdA0`
