@@ -4,7 +4,7 @@
 
 1. **Carbon Credit Token Contract:** 
    - Polygon Mumbai Testnet
-     - Contract address: `0xbbB6623C5938cA5331f53B32BAe8dDe13d974dE0`
+     - Contract address: `0xf2c1f0eF64F63bcA27Ec2b6F6e6686B0Bd0DF13F`
      - Mumbai Polyscan: https://mumbai.polygonscan.com/address/0xf2c1f0eF64F63bcA27Ec2b6F6e6686B0Bd0DF13F
 
    - Polygon zkEVM Testnet
