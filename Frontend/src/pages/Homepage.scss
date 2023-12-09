@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:wght@600&family=Roboto:wght@400;500;700;900&display=swap');
+
+.home_container{
+    background: url('./assets//background.webp') no-repeat !important;
+    background-position: center center;
+    background-size: cover;
+}
+
+.internal_container{
+    margin: 1.5rem;
+}
+
+.table_org_content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.table_img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.desc_container{
+    background-color: white;
+    padding: 8px;
+    padding-inline: 16px;
+    border-radius: 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.088);
+    padding-bottom: 16px;
+
+    &-heading{
+        font-family: 'Afacad', sans-serif;
+        font-size: 40px;
+    }
+
+    &-description{
+        font-size: 16px;
+        line-height: 1.5;
+        padding-block: 12px;
+    }
+}
+
+.wallet_details{
+    color: white;
+    font-size: 18px;
+    font-family: 'Afacad', sans-serif;
+}
