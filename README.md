@@ -55,7 +55,8 @@
 
 ## Example Premise and Overview
 
-![premise-diagram](./carbon-credit-premise.jpg)
+![carbon-credit-premise.jpg](https://github.com/sreenikethMadgula/carbon-credit/assets/56798332/00d740b8-f7b6-4105-9bc0-d6600a0d2ca1)
+
 
 ## Thoughts behind the idea
 
