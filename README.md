@@ -11,6 +11,14 @@
      - Contract address: `0x04C6C2726c57292aFc8bfb980068EFC52D620D4B`
      - zkEVM Polyscan: https://testnet-zkevm.polygonscan.com/address/0x04c6c2726c57292afc8bfb980068efc52d620d4b
 
+   - Arbitrum Sepolia Testnet
+     - Contract address: `0x22108036F5e73642f901B38e376A8E8E7702b7BA`
+     - Sepolia arbiscan: https://sepolia.arbiscan.io/address/0x22108036F5e73642f901B38e376A8E8E7702b7BA
+
+   - Scroll Sepolia Testnet
+     - Contract addres: `0x04c6c2726c57292afc8bfb980068efc52d620d4b`
+     - Sepolia scrollscan: https://sepolia.scrollscan.dev/address/0x04c6c2726c57292afc8bfb980068efc52d620d4b
+
    - Ethereum Sepolia Testnet
      - Contract address: 0x04C6C2726c57292aFc8bfb980068EFC52D620D4B
      - Sepolia etherscan: https://sepolia.etherscan.io/address/0x04C6C2726c57292aFc8bfb980068EFC52D620D4B
@@ -24,8 +32,15 @@
    - Polygon zkEVM Testnet
      - Contract address: `0x8eCEE3795D22f95F608a7000bAda71ff1b8cAdA0`
      - zkEVM Polyscan: https://testnet-zkevm.polygonscan.com/address/0x8eCEE3795D22f95F608a7000bAda71ff1b8cAdA0
-   
 
+   - Arbitrum Sepolia Testnet
+     - Contract address: `0x4C92276f74CdE701c6490CBD591c75513649f9ad`
+     - Sepolia arbiscan: https://sepolia.arbiscan.io/address/0x4C92276f74CdE701c6490CBD591c75513649f9ad
+
+   - Scroll Sepolia Testnet
+     - Contract address: `0x8eCEE3795D22f95F608a7000bAda71ff1b8cAdA0`
+     - Sepolia scrollscan: https://sepolia.scrollscan.dev/address/0x8eCEE3795D22f95F608a7000bAda71ff1b8cAdA0
+   
    - Ethereum Sepolia Testnet
      - Contract address: `0x8eCEE3795D22f95F608a7000bAda71ff1b8cAdA0`
      - Sepolia etherscan: https://sepolia.etherscan.io/address/0x8eCEE3795D22f95F608a7000bAda71ff1b8cAdA0
