@@ -16,8 +16,12 @@
      - Sepolia arbiscan: https://sepolia.arbiscan.io/address/0x22108036F5e73642f901B38e376A8E8E7702b7BA
 
    - Scroll Sepolia Testnet
-     - Contract addres: `0x04c6c2726c57292afc8bfb980068efc52d620d4b`
+     - Contract address: `0x04c6c2726c57292afc8bfb980068efc52d620d4b`
      - Sepolia scrollscan: https://sepolia.scrollscan.dev/address/0x04c6c2726c57292afc8bfb980068efc52d620d4b
+
+   - Base Sepolia Testnet
+     - Contract address: `0x4C92276f74CdE701c6490CBD591c75513649f9ad`
+
 
    - Ethereum Sepolia Testnet
      - Contract address: `0x04C6C2726c57292aFc8bfb980068EFC52D620D4B`
@@ -40,11 +44,20 @@
    - Scroll Sepolia Testnet
      - Contract address: `0x8eCEE3795D22f95F608a7000bAda71ff1b8cAdA0`
      - Sepolia scrollscan: https://sepolia.scrollscan.dev/address/0x8eCEE3795D22f95F608a7000bAda71ff1b8cAdA0
+
+   - Base Sepolia Testnet
+     - Contract address: `0xE020526570978a3E8b7aCdb2887F924351d32299`
    
    - Ethereum Sepolia Testnet
      - Contract address: `0x8eCEE3795D22f95F608a7000bAda71ff1b8cAdA0`
      - Sepolia etherscan: https://sepolia.etherscan.io/address/0x8eCEE3795D22f95F608a7000bAda71ff1b8cAdA0
 
+
+## Example Premise and Overview
+
+![premise-diagram](carbon-credit-premise.png)
+
+## Thoughts behind the idea
 
 The idea of tokenized carbon credits involves leveraging blockchain technology to create a decentralized platform for trading carbon credits. Carbon credits are tradable permits or certificates that represent the right to emit a specific amount of greenhouse gases. These credits are typically earned by organizations or individuals who reduce their carbon footprint or engage in activities that absorb or prevent the release of greenhouse gases.
 
