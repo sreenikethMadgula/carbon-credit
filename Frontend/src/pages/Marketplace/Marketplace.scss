@@ -1,0 +1,16 @@
+.marketplace_container{
+    background-color: white;
+}
+
+.transaction_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.selling_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.058);
+}
