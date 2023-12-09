@@ -20,7 +20,7 @@
      - Sepolia scrollscan: https://sepolia.scrollscan.dev/address/0x04c6c2726c57292afc8bfb980068efc52d620d4b
 
    - Ethereum Sepolia Testnet
-     - Contract address: 0x04C6C2726c57292aFc8bfb980068EFC52D620D4B
+     - Contract address: `0x04C6C2726c57292aFc8bfb980068EFC52D620D4B`
      - Sepolia etherscan: https://sepolia.etherscan.io/address/0x04C6C2726c57292aFc8bfb980068EFC52D620D4B
 
 
