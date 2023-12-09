@@ -55,7 +55,7 @@
 
 ## Example Premise and Overview
 
-![premise-diagram](carbon-credit-premise.png)
+![premise-diagram](./carbon-credit-premise.png)
 
 ## Thoughts behind the idea
 
