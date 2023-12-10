@@ -11,14 +11,18 @@
   },
   "dependencies": {
     "@airstack/airstack-react": "^0.6.1",
+    "@maticnetwork/maticjs": "^3.6.7",
+    "@maticnetwork/maticjs-ethers": "^1.0.3",
     "@pushprotocol/restapi": "^1.4.45",
     "antd": "^5.12.1",
     "axios": "^1.6.2",
     "ethers": "^5.7.2",
+    "lottie-react": "^2.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.1",
     "sass": "^1.69.5",
+    "sonner": "^1.2.4",
     "web3": "^4.3.0"
   },
   "devDependencies": {
