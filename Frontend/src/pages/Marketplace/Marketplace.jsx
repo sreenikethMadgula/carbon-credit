@@ -4,12 +4,16 @@ const { Header, Content, Sider } = Layout;
 import { CaretUpOutlined, CaretDownOutlined } from "@ant-design/icons";
 import { Space, Table, Tag, Button } from 'antd';
 import { InputNumber } from "antd";
+import { ethers } from 'ethers';
+import { Toaster, toast } from 'sonner'
 
 //Static files
 import StackOSImg from '../../assets/stack.jpeg'
 import Logo from '../../assets/Logo.png'
 import './Marketplace.scss'
 import FormItemLabel from "antd/es/form/FormItemLabel";
+import MarketplaceABI from "../../assets/Marketplace";
+
 
 const MarketPlace = () => {
     const ProjectDesc = () => {
@@ -33,19 +37,102 @@ const MarketPlace = () => {
     }
 
     const SellData = () =>{
-
-        const onChange = (value) => {
+        const [quantity,setQuantity] = useState(null)
+        const [price,setPrice] = useState(null)
+        const onQuantityChange = (value) => {
             console.log('changed', value);
+            setQuantity(value)
+        };
+        const onPriceChange = (value) => {
+            console.log('changed', value);
+            setPrice(value)
         };
 
-        return(
-            <div className="selling_content">
-                <InputNumber min={1} max={10} placeholder="Quantity" size="large"  onChange={onChange} />
-                <InputNumber min={1} max={10} placeholder="Price" size="large"  onChange={onChange} />
-                <Button size="large">Sell</Button>
-            </div>
-        )
+        const sellCCToken = async (quantity,price) => {
+            if(typeof window.ethereum !== "undefined"){
+                const contractAddress = '0x8eCEE3795D22f95F608a7000bAda71ff1b8cAdA0';
+                const provider = new ethers.providers.Web3Provider(window.ethereum)
+                const signer = provider.getSigner(0)
+                console.log("provider", provider)
+    
+                const contract = new ethers.Contract (
+                    contractAddress,
+                    MarketplaceABI,
+                    signer
+                )
+                console.log("contract", contract)
+                try {
+                    const transaction = await contract.createListing(quantity,price)
+                    await transaction.wait()
+                    console.log("data", transaction)
+                    {transaction && toast.success('Congratulations! Listing created successfully.')}
+                } catch (err) {
+                    console.log("error", err)
+    
+                }
+        }
+
     }
+
+    async function buyCToken() {
+        if(typeof window.ethereum !== "undefined"){
+            const contractAddress = '0x8eCEE3795D22f95F608a7000bAda71ff1b8cAdA0';
+            const provider = new ethers.providers.Web3Provider(window.ethereum)
+            const signer = provider.getSigner(0)
+            console.log("provider", provider)
+
+            const contract = new ethers.Contract (
+                contractAddress,
+                MarketplaceABI,
+                signer
+            )
+            console.log("contract", contract)
+            try {
+                const options = {value: ethers.utils.parseEther("1.0")}
+                const transaction = await contract.makeOffer(1,1, options)
+                await transaction.wait()
+                console.log("data", transaction)
+                {transaction && toast.success('Congratulations! Token issued successful.')}
+            } catch (err) {
+                console.log("error", err)
+
+            }
+    }
+    }
+
+    // async function getListings() {
+    //     if(!typeof window.ethereum !== "undefined"){
+    //         const contractAddress = '0x04C6C2726c57292aFc8bfb980068EFC52D620D4B';
+    //         const provider = new ethers.providers.Web3Provider(window.ethereum)
+    //         console.log("provider", provider)
+    //         // const listingData = []
+
+    //         const contract = new ethers.Contract (
+    //             contractAddress,
+    //             MarketplaceABI,
+    //             provider
+    //         )
+    //         console.log("contract", contract)
+    //         try {
+    //             const data = await contract.get_listings
+    //             // for (int i =0; i <)
+    //             const data = await contract.listings()
+    //             console.log("data", data)
+    //         } catch (err) {
+    //             console.log("error", err)
+
+    //         }
+    //     }
+    // }
+    return(
+        <div className="selling_content">
+            <InputNumber min={1} max={1000} placeholder="Quantity" size="large"  onChange={onQuantityChange} />
+            <InputNumber min={1} max={10000} placeholder="Price" size="large"  onChange={onPriceChange} />
+            <Button size="large" onClick={() => sellCCToken(quantity,price)}>Sell</Button>
+            {/* <Button size="large" onClick={() => getListings()}>k</Button>
+            <Button size="large" onClick={() => buyCToken()}>b</Button> */}
+        </div>
+    )}
 
 
     const OrganizationData = () => {
@@ -121,6 +208,7 @@ const MarketPlace = () => {
     return (
         <>
             <div className="marketplace_container">
+            <Toaster position="top-center" richColors toastOptions={{ style: { fontSize: "0.9rem" } }} />
                 <Layout style={{ backgroundColor: "white" }}>
                     <Header
                         style={{

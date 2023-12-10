@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import { LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
-const { Header, Content, Sider } = Layout;
+import { Layout, theme } from 'antd';
+const { Header } = Layout;
 import { Space, Table, Tag, Button } from 'antd';
 import { CaretUpOutlined, CaretDownOutlined } from "@ant-design/icons";
 import Web3 from 'web3';
 import { ethers } from 'ethers';
-import Lottie from "lottie-react";
 import { Toaster, toast } from 'sonner'
 
 
@@ -91,6 +89,7 @@ const HomePage = () => {
             console.log("contract", contract)
             try {
                 const transaction = await contract.issueCredits("0xbbB6623C5938cA5331f53B32BAe8dDe13d974dE0", "9")
+                // const transaction = await contract.approve("0x8eCEE3795D22f95F608a7000bAda71ff1b8cAdA0", "10000000")
                 await transaction.wait()
                 console.log("data", transaction)
                 {transaction && toast.success('Congratulations! Token issued successful.')}
